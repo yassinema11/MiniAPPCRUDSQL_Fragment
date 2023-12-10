@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#03A9F4"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".Modifier">
+
+
+    <EditText
+        android:id="@+id/editid"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:background="@drawable/input"
+        android:inputType="text"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:hint="ID"
+        android:textColorHint="@color/black"/>
+
+    <EditText
+        android:id="@+id/editnom"
+        android:layout_below="@id/editid"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/input"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:hint="NOM"
+        android:ems="10"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/editnum"
+        android:layout_below="@id/editnom"
+        android:layout_width="wrap_content"
+        android:textColorHint="@color/black"
+        android:layout_height="50dp"
+        android:background="@drawable/input"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:hint="Number"
+        android:ems="10"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editnum"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Modifier" />
+</RelativeLayout>
